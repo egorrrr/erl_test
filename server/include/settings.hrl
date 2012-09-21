@@ -1,0 +1,1 @@
+-define(SETTINGS, "../include/settings.ini").

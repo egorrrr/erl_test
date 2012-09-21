@@ -1,0 +1,2 @@
+mkdir ebin
+erl -make
