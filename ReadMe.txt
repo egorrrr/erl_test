@@ -31,8 +31,9 @@
     и выполнить: erl> test_server:config().  
 	
 Запуск генераторов:
-(1) В дериктории  build\generators выполнить run.bat
-(2) В открывшемся терминале запустить генераторы erl> Pids = generators:start( "http://localhost:8080/number/", CountGenerators ) . 
+(1) В дериктории  build\generators\ebin выполнить erl
+(2) В открывшемся терминале запустить генераторы 
+  erl> Pids = generators:start( "http://localhost:8080/number/", 10 ) . 
 (3) Для остановки - generators:stop(Pid).
  
 Ответы тестового сервера будут сохраняться в файлах build\generators\logs\GenXXX.log отдельно для каждого генератора
@@ -40,7 +41,8 @@
 ---------------------------------------------------------------------------------------------------
 Ручное тестирование:
 
-(1) curl.exe -X GET http://localhost:8080/numbers/ - запрос на получение отчета (список последовательностей)
+(1) curl.exe -X GET http://localhost:8080/numbers/ - запрос на получение отчета 
+                                                    (список последовательностей)
 (1) curl.exe -X PUT -d "value=_IntegerValue_" http://localhost:8080/number/ - отправка числа IntegerValue   
 (Например, 
     curl.exe -X GET http://localhost:8080/numbers/ 
