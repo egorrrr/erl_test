@@ -1,6 +1,0 @@
-wget http://yaws.hyber.org/download/yaws-1.89.tar.gz
-tar xfz yaws-1.89.tar.gz
-sudo apt-get install gcc
-cd yaws
-./configure && make
-
