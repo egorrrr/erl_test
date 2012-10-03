@@ -1,0 +1,7 @@
+
+=INFO REPORT==== 3-Oct-2012::11:01:16 ===
+Ctlfile : /home/ubuntu/.yaws/yaws/default/CTL
+
+=INFO REPORT==== 3-Oct-2012::11:01:16 ===
+Yaws: Listening to 0.0.0.0:8080 for <1> virtual servers:
+ - http://localhost:8080 under /home/ubuntu/erl_test/build/server/ebin/../priv
