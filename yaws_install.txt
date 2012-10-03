@@ -1,0 +1,15 @@
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo aptitude install libpam0g-dev gcc
+
+wget http://yaws.hyber.org/download/yaws-1.89.tar.gz
+tar xfz yaws-1.89.tar.gz
+sudo apt-get install gcc
+cd yaws
+./configure && make
+
+-- add pathto ~/.profile
+if [ -d "$HOME/yaws/bin" ] ; then
+    PATH="$HOME/yaws/bin:$PATH"
+fi
